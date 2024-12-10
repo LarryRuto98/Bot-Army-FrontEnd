@@ -1,0 +1,54 @@
+
+.bot-details {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .bot-details h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+ 
+  .bot-details img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 100%;
+    border-radius: 8px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  
+  .bot-stats p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #444;
+    overflow: hidden;
+  }
+  
+  
+  .bot-stats strong {
+    color: #2d2d2d;
+  }
+  
+  
+  .bot-catchphrase {
+    font-size: 16px;
+    margin-top: 15px;
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: #555;
+  }
+  

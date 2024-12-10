@@ -1,0 +1,11 @@
+.bot-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .bot-collection .bot-card {
+    margin: 10px;
+  }
+  
