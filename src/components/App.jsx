@@ -25,10 +25,10 @@ function App() {
 
   // Function to discharge bot (remove from both frontend and backend)
   const dischargeBot = (botId) => {
-    // Remove the bot from the frontend optimistically
+    
     setBotArmy(botArmy.filter((bot) => bot.id !== botId));
 
-    // Delete the bot from the backend (no error handling)
+    
     fetch(`https://galactic-bot-army.vercel.app/bots${botId}`, { method: 'DELETE' })
       .then(() => {
        
