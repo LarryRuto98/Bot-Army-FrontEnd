@@ -10,7 +10,7 @@ function App() {
   const addBotToArmy = (botId) => {
     const botExists = botArmy.some((bot) => bot.id === botId); 
     if (!botExists) {
-      fetch(`https://galactic-bot-army.vercel.app/bots${botId}`)
+      fetch(`https://galactic-bot-army.vercel.app/bots/${botId}`)
         .then((response) => response.json())
         .then((data) => {
           setBotArmy((prevArmy) => [...prevArmy, data]); 
@@ -29,7 +29,7 @@ function App() {
     setBotArmy(botArmy.filter((bot) => bot.id !== botId));
 
     
-    fetch(`https://galactic-bot-army.vercel.app/bots${botId}`, { method: 'DELETE' })
+    fetch(`https://galactic-bot-army.vercel.app/bots/${botId}`, { method: 'DELETE' })
       .then(() => {
        
       })
@@ -40,7 +40,7 @@ function App() {
 
  
   const viewBotDetails = (botId) => {
-    fetch(`https://galactic-bot-army.vercel.app/bots${botId}`)
+    fetch(`https://galactic-bot-army.vercel.app/bots/${botId}`)
       .then((response) => response.json())
       .then((data) => setSelectedBot(data)); 
   };
